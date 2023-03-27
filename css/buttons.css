@@ -1,0 +1,41 @@
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 88%;
+    padding: 1rem 2rem;
+}
+
+.button {
+    border: 0;
+    border-radius: 50%;
+    box-shadow: none;
+    display: inline-block;
+    transition: all 0.2s ease-in-out;
+}
+
+img {
+    background-color: aquamarine;
+    border-radius: 50%;
+    margin : 0;
+    padding: 0;
+}
+
+button:hover:not(:disabled), button:active:not(:disabled) {
+    cursor: pointer;
+    transform: scale(1.3);
+}
+
+#showResultsButton {
+    border-radius: 6px !important;
+    border: 2px dashed rgb(132, 29, 136) !important;
+    display: none;
+    height: min-content;
+    padding: 1rem;
+}
+
+#showResultsButton p {
+    padding: 0;
+    margin: 0;
+}

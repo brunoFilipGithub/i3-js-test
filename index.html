@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quiz</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/styles.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+         
+        <aside class="sidebar">
+            <div id="1" class="slide" onclick="javascript:selectQuestion(this.id)">1</div>
+            <div id="2" class="slide" onclick="javascript:selectQuestion(this.id)">2</div>
+            <div id="3" class="slide" onclick="javascript:selectQuestion(this.id)">3</div>
+            <div id="4" class="slide" onclick="javascript:selectQuestion(this.id)">4</div>
+        </aside>
+
+        <main class="quiz-window">
+            <header class="header">
+                <h1>Quiz</h1>
+                <div id="menuButton" class="header-menu">
+                    <span class="bar bar1"></span>
+                    <span class="bar bar2"></span>
+                    <span class="bar bar3"></span>
+                </div>
+            </header>
+
+            <div class="buttons">
+                <button id="prev" class="button">
+                    <img src="assets/arrow-left.svg"/>
+                </button>
+
+                <button id="next" class="button">
+                    <img src="assets/arrow-left.svg" style="transform: rotate(180deg);"/>
+                </button>
+
+                <button id="showResultsButton" class="button">
+                    <p>Show results!</p>
+                </button>
+            </div>
+
+            <div class="content">
+                <p id="question"></p>
+                <div class="answers-area"></div>
+            </div>
+        </main>
+
+        <script src="js/htmlElements.js"></script>
+        <script src="js/objects/modal.js"></script>
+        <script src="js/mobileMenu.js"></script>
+        <script src="js/objects/answer.js"></script>
+        <script src="js/objects/question.js"></script>
+        <script src="js/answerSelectionHandling.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

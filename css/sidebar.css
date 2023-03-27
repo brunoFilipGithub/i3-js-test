@@ -1,0 +1,29 @@
+.sidebar {
+    flex-direction: column;
+}
+
+.slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    border: 2px solid black;
+    border-bottom-width: 1px;
+    background-color: #58b15b;
+    color: white;
+    height: 25%;
+    font-weight: bold;
+    transition: all 150ms ease-in-out;
+}
+
+.selectedSlide {
+    border-width: 6px;
+    border-color: red;
+}
+
+
+.slide:hover, .slide:active {
+    cursor: pointer;
+    color: black;
+    border-width: 3px;
+}
